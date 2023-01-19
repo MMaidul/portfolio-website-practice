@@ -95,3 +95,103 @@ blockquote {
 ion-icon {
   --ionicon-stroke-width: 20px;
 }
+
+.container {
+  position: relative;
+  max-width: 1440px;
+  height: 100vh;
+  margin: auto;
+  overflow: hidden;
+}
+.nav-mobile {
+  position: fixed;
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--background-dark-90);
+  border-bottom: 1px solid var(--background-dark-70);
+  padding: 10px 20px;
+  z-index: 100;
+}
+.nav-mobile .navbar-brand {
+  display: flex;
+  align-items: center;
+}
+.nav-mobile .brand-img {
+  width: 35px;
+  margin-right: 10px;
+}
+
+.nav-mobile .brand-name {
+  font-size: var(--font-size-18);
+  margin-bottom: 0;
+}
+.nav-mobile .menu-toggler {
+  font-size: var(--font-size-24);
+  --ionicon-stroke-width: 50px;
+  cursor: pointer;
+}
+
+.side-bar {
+  position: absolute;
+  width: 160px;
+  height: 100%;
+  padding: 30px 0;
+  text-align: center;
+  background: var(--background-dark-90);
+  overflow-y: auto;
+  display: table;
+  z-index: 50;
+}
+
+.side-bar .brand-img {
+  width: 80px;
+  margin-bottom: 20px;
+}
+.side-bar .brand-name {
+  text-align: center;
+  line-height: 1;
+  font-size: var(--font-size-24);
+  margin-bottom: 30px;
+}
+
+.nav li a {
+  width: 100%;
+  padding: 12px 0;
+  border-top: 1px solid var(--background-dark-80);
+  font-size: var(--font-size-14);
+  transition: background var(--transition-default);
+}
+
+.nav li:last-child a {
+  border-bottom: 1px solid var(--background-dark-80);
+}
+
+.nav li a:hover {
+  background-color: var(--background-dark-80);
+  box-shadow: inset -2px 0 0 var(--color-white-95);
+}
+.nav li a.active {
+  background: var(--background-dark-80);
+  box-shadow: inset -2px 0 0 var(--background-orange);
+}
+
+.social-btn-groups .btn {
+  padding: 4px 7px 0 7px;
+  margin: 40px 2px;
+  background: var(--background-dark-70);
+  color: var(--color-white-60);
+  transition: all var(--transition-default);
+}
+.social-btn-groups .btn:hover {
+  background: var(--background-orange);
+  color: var(--color-white-100);
+}
+
+.side-bar-footer {
+  display: table-row;
+}
+.side-bar-footer .copyright {
+  font-size: var(--font-size-12);
+  color: var(--color-white-60);
+}
